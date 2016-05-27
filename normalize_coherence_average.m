@@ -47,7 +47,7 @@ for ii = 1:2
 end
 
 xlabel('Frequency (Hz)'); ylabel('Coherence');
-set(gca,'XLim',[0 25],'XTick',0:5:25,'FontSize',12); grid on;
+set(gca,'XLim',[0 25],'XTick',0:5:25,'YLim',[-20 0],'YTick',-20:5:0,'FontSize',12); grid on;
 legend('O1-T7','T7-FC5');
 title('Musical background - musical imagery (N=2)');
 
@@ -80,7 +80,7 @@ for ii = 1:2
 end
 
 xlabel('Frequency (Hz)'); ylabel('Coherence');
-set(gca,'XLim',[0 25],'XTick',0:5:25,'FontSize',12); grid on;
+set(gca,'XLim',[0 25],'XTick',0:5:25,'YLim',[-20 0],'YTick',-20:5:0,'FontSize',12); grid on;
 legend('O1-T7','T7-FC5');
 title('Musical background - visual imagery (N=2)');
 
@@ -109,7 +109,7 @@ for ii = 1:2
 end
 
 xlabel('Frequency (Hz)'); ylabel('Coherence');
-set(gca,'XLim',[0 25],'XTick',0:5:25,'FontSize',12); grid on;
+set(gca,'XLim',[0 25],'XTick',0:5:25,'YLim',[-20 0],'YTick',-20:5:0,'FontSize',12); grid on;
 legend('O1-T7','T7-FC5');
 title('No musical background - musical imagery (N=2)');
 
@@ -138,6 +138,6 @@ for ii = 1:2
 end
 
 xlabel('Frequency (Hz)'); ylabel('Coherence');
-set(gca,'XLim',[0 25],'XTick',0:5:25,'FontSize',12); grid on;
+set(gca,'XLim',[0 25],'XTick',0:5:25, 'YLim',[-20 0],'YTick',-20:5:0, 'FontSize',12); grid on;
 legend('O1-T7','T7-FC5');
 title('No musical background - visual imagery (N=2)');

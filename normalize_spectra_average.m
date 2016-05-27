@@ -51,7 +51,7 @@ for ii = 1:3
 end
 
 xlabel('Frequency (Hz)'); ylabel('Power (dB)');
-set(gca,'XLim',[0 50],'XTick',0:10:50,'FontSize',12); grid on;
+set(gca,'XLim',[0 50],'XTick',0:10:50,'YLim',[-50 0],'YTick',-50:10:0,'FontSize',12); grid on;
 legend('O1','T7', 'FC5');
 title('Musical background - musical imagery condition (N=2)');
 
@@ -88,7 +88,7 @@ for ii = 1:3
 end
 
 xlabel('Frequency (Hz)'); ylabel('Power (dB)');
-set(gca,'XLim',[0 50],'XTick',0:10:50,'FontSize',12); grid on;
+set(gca,'XLim',[0 50],'XTick',0:10:50,'YLim',[-50 0],'YTick',-50:10:0,'FontSize',12); grid on;
 legend('O1','T7','FC5');
 title('Musical background - visual imagery condition (N=2)');
 
@@ -121,7 +121,7 @@ for ii = 1:3
 end
 
 xlabel('Frequency (Hz)'); ylabel('Power (dB)');
-set(gca,'XLim',[0 50],'XTick',0:10:50,'FontSize',12); grid on;
+set(gca,'XLim',[0 50],'XTick',0:10:50,'YLim',[-50 0],'YTick',-50:10:0,'FontSize',12); grid on;
 legend('O1','T7', 'FC5');
 title('No Musical background - musical imagery condition (N=2)');
 
@@ -154,7 +154,7 @@ for ii = 1:3
 end
 
 xlabel('Frequency (Hz)'); ylabel('Power (dB)');
-set(gca,'XLim',[0 50],'XTick',0:10:50,'FontSize',12); grid on;
+set(gca,'XLim',[0 50],'XTick',0:10:50,'YLim',[-50 0],'YTick',-50:10:0,'FontSize',12); grid on;
 legend('O1','T7', 'FC5');
 title('No Musical background - visual imagery condition (N=2)');
 
