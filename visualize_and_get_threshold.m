@@ -17,7 +17,7 @@ plot(roman_exp{3}', 'k');
 %}
 
 
-roman_exp_thresh = 250;
+roman_exp_thresh = 200;
 
 
 % visualize roman_ctrl
@@ -96,9 +96,6 @@ plot(angel_ctrl{3}', 'k');
 %}
 
 angel_ctrl_thresh = 75;
-
-
-
 
 
 
