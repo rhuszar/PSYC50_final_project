@@ -47,8 +47,8 @@ for ii = 1:2
 end
 
 xlabel('Frequency (Hz)'); ylabel('Coherence');
-set(gca,'XLim',[0 25],'XTick',0:5:25, 'YLim',[0 0.8],'YTick',0:0.2:0.8, 'FontSize',12); grid on;
-legend('O2-T8','T8-FC6');
+set(gca,'XLim',[0 25],'XTick',0:5:25,'FontSize',12); grid on;
+legend('O1-T7','T7-FC5');
 title('Musical background - musical imagery (N=2)');
 %'YLim',[-20 0],'YTick',-20:5:0
 
@@ -81,8 +81,8 @@ for ii = 1:2
 end
 
 xlabel('Frequency (Hz)'); ylabel('Coherence');
-set(gca,'XLim',[0 25],'XTick',0:5:25,'YLim',[0 0.8],'YTick',0:0.2:0.8,'FontSize',12); grid on;
-legend('O2-T8','T8-FC6');
+set(gca,'XLim',[0 25],'XTick',0:5:25,'FontSize',12); grid on;
+legend('O1-T7','T7-FC5');
 title('Musical background - visual imagery (N=2)');
 
 %{
@@ -105,13 +105,13 @@ subplot(2,2,3)
 
 for ii = 1:2
     result{ii} = (length(savos_exp{1})*Y{ii} + length(angel_exp{1})*N{ii})/(length(savos_exp{1})+length(angel_exp{1})); 
-    plot(M{ii},result{ii}, cols(ii), 'LineWidth', 2);
+    plot(M{ii},10*log10(result{ii}), cols(ii), 'LineWidth', 2);
     hold on
 end
 
 xlabel('Frequency (Hz)'); ylabel('Coherence');
-set(gca,'XLim',[0 25],'XTick',0:5:25,'YLim',[0 0.8],'YTick',0:0.2:0.8,'FontSize',12); grid on;
-legend('O2-T8','T8-FC6');
+set(gca,'XLim',[0 25],'XTick',0:5:25,'YLim',[-20 0],'YTick',-20:5:0,'FontSize',12); grid on;
+legend('O1-T7','T7-FC5');
 title('No musical background - musical imagery (N=2)');
 
 %{
@@ -134,11 +134,11 @@ subplot(2,2,4)
 
 for ii = 1:2
     result{ii} = (length(savos_ctrl{1})*Y{ii} + length(angel_ctrl{1})*N{ii})/(length(savos_ctrl{1})+length(angel_ctrl{1})); 
-    plot(M{ii},result{ii}, cols(ii), 'LineWidth', 2);
+    plot(M{ii},10*log10(result{ii}), cols(ii), 'LineWidth', 2);
     hold on
 end
 
 xlabel('Frequency (Hz)'); ylabel('Coherence');
-set(gca,'XLim',[0 25],'XTick',0:5:25,'YLim',[0 0.8],'YTick',0:0.2:0.8,'FontSize',12); grid on;
-legend('O2-T8','T8-FC6');
+set(gca,'XLim',[0 25],'XTick',0:5:25, 'YLim',[-20 0],'YTick',-20:5:0, 'FontSize',12); grid on;
+legend('O1-T7','T7-FC5');
 title('No musical background - visual imagery (N=2)');

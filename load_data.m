@@ -1,9 +1,9 @@
 
 %%
 
-ch1 = 3;    % O1 occipital
-ch2 = 7;    % T7 temporal
-ch3 = 13;   % FC5 frontocentral... Rolandic???
+ch1 = 3;    % O2 occipital
+ch2 = 7;    % T8 temporal
+ch3 = 13;   % FC6 frontocentral... Rolandic???
 myCh = [ch1 ch2 ch3];
 
 
